@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery/src/core/constants/page.dart';
 import 'package:food_delivery/src/presentation/pages/login/login_page.dart';
+import 'package:food_delivery/src/presentation/pages/onboarding/onboarding_page.dart';
+import 'package:food_delivery/src/presentation/pages/splash_screen_page.dart';
 import 'util.dart';
 import 'theme.dart';
 
@@ -26,7 +29,12 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Food Delivery App',
       theme: brightness == Brightness.light ? theme.light() : theme.dark(),
-      home: const LoginPage(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const SplashScreenPage(),
+        loginPage: (context) => const LoginPage(),
+        onboardingPage: (context) => const OnBoardingPage(),
+      },
     );
   }
 }

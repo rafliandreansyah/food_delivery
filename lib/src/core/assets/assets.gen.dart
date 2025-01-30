@@ -32,8 +32,16 @@ class $AssetsImagesGen {
   AssetGenImage get bgLogin =>
       const AssetGenImage('assets/images/bg-login.png');
 
+  /// File path: assets/images/bg-onboarding1.png
+  AssetGenImage get bgOnboarding1 =>
+      const AssetGenImage('assets/images/bg-onboarding1.png');
+
+  /// File path: assets/images/bg-onboarding2.png
+  AssetGenImage get bgOnboarding2 =>
+      const AssetGenImage('assets/images/bg-onboarding2.png');
+
   /// List of all assets
-  List<AssetGenImage> get values => [bgLogin];
+  List<AssetGenImage> get values => [bgLogin, bgOnboarding1, bgOnboarding2];
 }
 
 class Assets {
