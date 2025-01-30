@@ -25,10 +25,22 @@ class $AssetsIconsGen {
   List<dynamic> get values => [icFb, icGoogle, icLogo];
 }
 
+class $AssetsImagesGen {
+  const $AssetsImagesGen();
+
+  /// File path: assets/images/bg-login.png
+  AssetGenImage get bgLogin =>
+      const AssetGenImage('assets/images/bg-login.png');
+
+  /// List of all assets
+  List<AssetGenImage> get values => [bgLogin];
+}
+
 class Assets {
   Assets._();
 
   static const $AssetsIconsGen icons = $AssetsIconsGen();
+  static const $AssetsImagesGen images = $AssetsImagesGen();
 }
 
 class AssetGenImage {
